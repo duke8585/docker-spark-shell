@@ -4,5 +4,5 @@ with tab complete and history replay working. usually that often does not work f
 
 ## usage
 
-see `.alias` files, they contain functions, which can be `source`'d.
+see [.alias](./.alias) file, they contain functions, which can be `source`'d.
 
