@@ -2,54 +2,58 @@ function ss313() {
     loc="spark_3_1_3"
 	name="local_$loc"
 	docker rm -f $name
-    docker build -t $name ./$loc/
+	cd ~/devel/docker-spark-shell/$loc/
+    docker build -t $name .
 	docker run -it \
 	--name $name \
 	--volume ~/sandbox:/cwd \
 	-p 5050:4040 \
 	$name \
 	bash -c "printf 🛑 http://localhost:5050 for history 🛑 && bash"
-	# see https://hub.docker.com/r/apache/spark-py/tags
+	cd -
 }
 
 function ss324() {
     loc="spark_3_2_4"
 	name="local_$loc"
 	docker rm -f $name
-    docker build -t $name ./$loc/
+    cd ~/devel/docker-spark-shell/$loc/
+    docker build -t $name .
 	docker run -it \
 	--name $name \
 	--volume ~/sandbox:/cwd \
 	-p 5050:4040 \
 	$name \
 	bash -c "printf 🛑 http://localhost:5050 for history 🛑 && bash"
-	# see https://hub.docker.com/r/apache/spark-py/tags
+	cd -
 }
 
 function ss333() {
     loc="spark_3_3_3"
 	name="local_$loc"
 	docker rm -f $name
-    docker build -t $name ./$loc/
+    cd ~/devel/docker-spark-shell/$loc/
+    docker build -t $name .
 	docker run -it \
 	--name $name \
 	--volume ~/sandbox:/cwd \
 	-p 5050:4040 \
 	$name \
 	bash -c "printf 🛑 http://localhost:5050 for history 🛑 && bash"
-	# see https://hub.docker.com/r/apache/spark-py/tags
+	cd -
 }
 
 function ss354() {
     loc="spark_3_5_4"
 	name="local_$loc"
 	docker rm -f $name
-    docker build -t $name ./$loc/
+    cd ~/devel/docker-spark-shell/$loc/
+    docker build -t $name .
 	docker run -it \
 	--name $name \
 	--volume ~/sandbox:/cwd \
 	-p 5050:4040 \
 	$name \
 	bash -c "printf 🛑 http://localhost:5050 for history 🛑 && bash"
-	# see https://hub.docker.com/r/apache/spark-py/tags
+	cd -
 }
